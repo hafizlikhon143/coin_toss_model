@@ -1,0 +1,29 @@
+.footer-1 a,.footer-2 a,.footer-4 a{
+    text-decoration: none;
+}
+.tag{
+    position: relative;
+}
+.tag::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    top: 100%;
+    background-color: var(--bs-warning);
+}
+.footer-1 a:hover,.footer-2 a:hover,.footer-4 a:hover{
+    color: var(--bs-warning)!important;
+}
+.info-footer{
+    word-break: break-all;
+}
+.foot-link{
+    text-align: left!important;
+}
+@media screen and (min-width:765px) {
+    .foot-link{
+        text-align: center!important;
+    }
+}

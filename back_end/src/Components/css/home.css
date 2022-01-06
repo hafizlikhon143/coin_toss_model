@@ -1,0 +1,60 @@
+.scroll-cont {
+  overflow-x: scroll !important;
+}
+
+.scroll-cont ::-webkit-scrollbar {
+  height: 1px !important;
+}
+
+.scroll-cont .btn {
+  background: rgba(0, 0, 0, 0.452);
+  border: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+.scroll-cont .card {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.scroll-cont .top-0 {
+  top: 30% !important;
+}
+
+.scroll-cont .bottom-0 {
+  bottom: 30% !important;
+}
+
+.scroll-cont .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.home-cont {
+  margin-top: 0px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.home-cont ::-webkit-scrollbar {
+  height: 0px;
+}
+
+.home-cont ::-webkit-scrollbar:hover {
+  height: 0px !important;
+}
+
+.home-cont ::-webkit-scrollbar-track {
+  background: var(--bs-dark);
+}
+
+.home-cont ::-webkit-scrollbar-thumb {
+  background: var(--bs-light);
+}
+
+.home-cont ::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-white);
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,148 @@
+body {
+  position: relative !important;
+}
+
+#navbar {
+  background: #000 !important;
+  z-index: 2 !important;
+}
+
+#navbar-item li {
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+#navbar-item li:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, var(--bs-warning)), color-stop(5%, var(--bs-dark)));
+  background: linear-gradient(0deg, var(--bs-warning) 5%, var(--bs-dark) 5%);
+}
+
+#navbar-item #nav-btn {
+  display: none !important;
+}
+
+.wrap {
+  padding: 0;
+}
+
+#hamberger {
+  display: -ms-grid !important;
+  display: grid !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 0px;
+  display: none !important;
+}
+
+#hamberger .hamberger-mark {
+  content: "";
+  background: #fff;
+  border-radius: 15px;
+  display: block;
+  height: 5px;
+  width: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#hamberger .hamberger-mark::after {
+  content: "";
+  background: #fff;
+  border-radius: 15px;
+  display: block;
+  height: 5px;
+  width: 15px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#hamberger .hamberger-mark::before {
+  content: "";
+  background: #fff;
+  border-radius: 15px;
+  display: block;
+  height: 5px;
+  width: 15px;
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hamberger-active {
+  -webkit-transform: rotate(45deg) translateX(-1px) !important;
+          transform: rotate(45deg) translateX(-1px) !important;
+}
+
+.hamberger-active > .hamberger-mark::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: calc(50% - 15px/2) !important;
+}
+
+.hamberger-active > .hamberger-mark::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: calc(50% - 15px/2) !important;
+}
+
+.hamberger-active > .hamberger-mark {
+  width: 43px !important;
+}
+
+@media (max-width: 767px) {
+  #hamberger {
+    display: -ms-grid !important;
+    display: grid !important;
+  }
+  #navbar-item {
+    position: absolute;
+    top: 114px;
+    background: var(--bs-dark);
+    margin: 0px !important;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 0%;
+  }
+  .nav-item-active {
+    height: 300px !important;
+    padding: 20px !important;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  #navbar #nav-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #navbar #lg-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 620px) {
+  #navbar-item {
+    top: 161px !important;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,61 @@
+@media screen and (min-width:512px) {
+    #bets_view{
+        margin-right: 45px!important;
+        left: auto!important;
+        width: 500px!important;
+        transition: all 0.2s ease-in-out;
+    }
+    #bets_view .bet_cont .fw-bold{
+        border: 1px var(--bs-dark) solid!important;
+    }
+}
+.bets_view_show{
+    top: 100%!important;
+    bottom: 100%!important;
+    right: 100%!important;
+    left: auto!important;
+    opacity: 0;
+}
+#bets_view{
+    z-index: 3;
+    right: 40px;
+    overflow-x: hidden;
+    right: 10px;
+    top: 10px!important;
+    bottom: 10px!important;
+    border-radius: 15px!important;
+    overflow-y: scroll!important;
+    left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+#bets_view .bet_cont .col-4,
+#bets_view .bet_cont .col-8{
+    display: grid!important;
+    justify-content: center!important;
+    align-items: center!important;
+    padding: 5px!important;
+    border: 1px var(--bs-secondary) solid!important;
+}
+.bets_view_toggle{
+    width: 42px;
+    height: 42px;
+    color: var(--bs-light);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    background: var(--bs-warning);
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    z-index: 4;
+}
+
+.btn-col{
+    background: rgb(32, 32, 32);
+    cursor: pointer;
+}
+.btn-col:hover{
+    background: var(--bs-dark);
+}

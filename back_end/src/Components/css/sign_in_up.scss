@@ -1,0 +1,84 @@
+#sign_in_up *{
+    box-sizing: border-box!important;
+}
+#sign_in_up{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("../../img/casino-banner-with-golden-cards-crown/SL-083019-22930-06.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 0px;
+    overflow: hidden;
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 100%;
+      }
+    ::-webkit-scrollbar-thumb{
+        background: var(--bs-dark);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: #fff;
+    }
+    ::-webkit-scrollbar:hover{
+        width: 10px!important;
+    }
+      /* Track */
+    #sign_in_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+    }
+    #sign_up_wrap{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: scroll ;
+        padding: 100px 0px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+    }
+    .form_sign_up{
+        border-radius: 15px;
+        margin: auto;
+        opacity: 1;
+    }
+    .form_sign_in{
+        opacity: 1;
+        margin: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background: #212529ea;
+        .form_input{
+            text-align: left;
+            margin: 10px 0px;
+            label{
+                font-size: 1rem;
+                padding-bottom: 5px;
+            }
+            input{
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: none!important;
+                border: 0px;
+            }
+        }
+    }
+}
+.switchCont{
+    transform: translateX(-100%)!important;
+}
+.opacity{
+    opacity: 0!important;
+    transform: translateX(0%) scale(0)!important;
+}

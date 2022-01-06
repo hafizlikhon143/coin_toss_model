@@ -1,0 +1,18 @@
+#profile_pic_update {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+}
+
+#profile_pic_update form {
+  background: rgba(37, 37, 37, 0.829);
+  border-radius: 15px !important;
+}
+
+body {
+  background: url("../../img/casino-banner-with-golden-cards-crown/SL-083019-22930-06.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+/*# sourceMappingURL=profile_form.css.map */

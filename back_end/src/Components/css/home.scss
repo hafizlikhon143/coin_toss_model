@@ -1,0 +1,47 @@
+.scroll-cont{
+    overflow-x: scroll!important;
+    ::-webkit-scrollbar{
+        height: 1px!important;
+    }
+    .btn{
+        background: rgba(0, 0, 0, 0.452);
+        border: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+    .card{
+        transition: all 0.2s ease-in-out;
+    }
+    .top-0{
+        top: 30%!important;
+    }
+    .bottom-0{
+        bottom: 30%!important;
+    }
+    .card:hover{
+        transform: scale(1.05);
+    }
+}
+.home-cont{
+    margin-top: 0px;
+    ::-webkit-scrollbar {
+        height: 0px;
+      }
+    ::-webkit-scrollbar:hover{
+        height: 0px!important;
+    }
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--bs-dark);
+    }
+      
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--bs-light);
+    }
+      
+      /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--bs-white);
+    }
+}

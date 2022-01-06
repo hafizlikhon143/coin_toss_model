@@ -1,0 +1,30 @@
+#intro{
+    height: 90vh!important;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("../../img/casino-banner-with-golden-cards-crown/SL-083019-22930-06.jpg");
+    background-position: center center;
+    background-size: cover;
+    .intro-text{
+        margin: auto!important;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(26, 24, 24, 0.836);
+        padding: 50px;
+        border-radius: 15px;
+        .btn{
+            width: fit-content;
+            margin: auto;
+            font-size: 1.2rem;
+            transition: all 0.2s ease-in-out;
+            font-weight: bold;
+        }
+        .btn:hover{
+            border-radius: 21px;
+        }
+    }
+}
