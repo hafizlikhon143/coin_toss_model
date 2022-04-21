@@ -13,7 +13,7 @@
     top: 100%!important;
     bottom: 100%!important;
     right: 100%!important;
-    left: auto!important;
+    left: -100%!important;
     opacity: 0;
 }
 #bets_view{
